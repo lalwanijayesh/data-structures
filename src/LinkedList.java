@@ -63,4 +63,15 @@ public class LinkedList {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        Node current = head;
+        while (current != null) {
+            result.append(current.data + " ");
+            current = current.next;
+        }
+        return result.toString();
+    }
 }
